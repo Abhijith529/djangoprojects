@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>details</h1>
+
+<table class=" container table table-bordered">
+    <tr>
+        <th>Title</th>
+        <td>{{book.title}}</td>
+        </tr>
+    <tr>
+        <th>Author</th>
+        <td>{{book.author}}</td>
+        </tr>
+    <tr>
+        <th>Pages</th>
+        <td>{{book.pages}}</td>
+        </tr>
+    <tr>
+        <th>Price</th>
+        <td>{{book.price}}</td>
+        </tr>
+    <tr>
+        <th>Language</th>
+        <td>{{book.language}}</td>
+    </tr>
+    <tr>
+        <th>Image</th>
+        <td><img src="{{book.image.url}}" height="200px" width="400px"></td>
+    </tr>
+
+</table>
+
+{% endblock %}
